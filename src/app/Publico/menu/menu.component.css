@@ -1,0 +1,18 @@
+.menu{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: aliceblue;
+    
+}
+
+.boton{
+    width: 100px;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #198820;
+    background-color: rgb(255, 255, 255);
+    color: #198820;
+    font-size: 15px;
+}

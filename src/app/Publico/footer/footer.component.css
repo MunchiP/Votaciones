@@ -1,0 +1,26 @@
+.footer{
+    height: 220px;
+    background: #3366CC;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.infomacion{
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+.horario{
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+
+.redesSociales{
+    height: 40px;
+    margin-top: 3rem;
+    padding: 1rem;
+}
