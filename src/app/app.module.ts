@@ -24,7 +24,8 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatMenuModule } from '@angular/material/menu';
 import { CabeceraComponent } from './Publico/cabecera/cabecera.component';
 import { MatCardModule } from '@angular/material/card';
-
+// para la api
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +54,7 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
+    HttpClientModule,
 
   ],
   providers: [],

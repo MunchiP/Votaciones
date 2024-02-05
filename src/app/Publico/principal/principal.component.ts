@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CorreoService } from 'src/app/Servicio/correo.service';
 
 @Component({
   selector: 'app-principal',
@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
-
-  constructor() { }
+  correo: any = {};
+ 
+  constructor(private service: CorreoService) { }
 
   ngOnInit(): void {
+    this.service.getAllCorreos().subscribe(correo => {
+      this.correo = correo.result;
+    })
   }
 
 

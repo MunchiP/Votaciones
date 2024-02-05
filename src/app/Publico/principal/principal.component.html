@@ -2,9 +2,12 @@
     <p class="titulo"> Votaciones 2024 </p>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, labore mollitia molestias commodi dolorem beatae amet voluptates asperiores nam doloribus! Dolorum nemo magni iusto maiores consectetur, adipisci odio quos soluta? </p>
 
-    <div class="union">
-        <p class="correoClass"> Correo </p>
-        <input type="text" id="ingresaCorreo">
-    </div>
+        <div *ngIf="correo; else mensajeIncorrecto">
+            <p class="correoClass"> {{correo}} </p>
+            <input type="text" id="ingresaCorreo">
+        </div>
+        <ng-template #mensajeIncorrecto>
+            <p> Correco no existente </p>
+        </ng-template>
     <button mat-button routerLink="Verificacion">Log in</button>
 </div>
